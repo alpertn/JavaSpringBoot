@@ -114,7 +114,7 @@ Application.properties dosyasını kendi database ve portunuza gore duzenleyin.
 ##logging.level.org.springframework=INFO
 ##logging.level.com.spring.proje=DEBUG
 #
-#
+# İnternete acmak ıcın cmd'ye bunu yazın ıstege baglı port degısebılır. key olusutrmak ıcın de bir alt satırı yazın.
 ## netsh http add urlacl url=https://+:443/ user=everyone
 ## keytool -genkeypair -alias tomcat -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650
 
