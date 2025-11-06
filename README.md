@@ -383,7 +383,7 @@ preReceive()
 postReceive()
 ```
  2. Docker
- 3 Api altyapısının Apache kafka ile değiştirilmesi 
+ 3. Api altyapısının Apache kafka ile değiştirilmesi 
  4. Flink
  5. Fraud bot koruması spam koruması
  6. Belirli user agent ile admin api'sine erişim
