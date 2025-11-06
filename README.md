@@ -87,8 +87,37 @@ cd JavaSpringBootAtm
 Yukarıdaki "Veritabanı Kurulumu ve Yapılandırması" bölümündeki SQL komutlarını kullanarak atm veritabanını ve tablolarını oluşturun.
 
 ### 3. Veritabanı Bağlantısını Yapılandırın:
-Application.properties dosyasını bu şekilde duzenleyin
+Application.properties dosyasını kendi database ve portunuza gore duzenleyin.
+
+#### Localhostta veya internete açık şekilde kolayca çalıştırabılmenız ıcın not ve key bıraktım. Eğer internete acık yapmak ıstıyorsanız not olmayan yerleri silin ve notların ustundekı # ısaretını silip projeyi calıstırın.
 ```java
+#spring.datasource.url=jdbc:mysql://localhost:3306/atm?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Europe/Istanbul
+#spring.datasource.username=root
+#spring.datasource.password=root
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#
+#
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+#
+### tum iplerden ulasmasi icin bu onemli
+##server.address=0.0.0.0
+##server.port=443
+##server.ssl.enabled=true
+##server.ssl.key-store=classpath:keystore.p12
+##server.ssl.key-store-password=123456
+##server.ssl.key-alias=tomcat
+#
+#security.aes-key=3f7vX9aT1zPqLkN2sYdBcRgUeWhZjXo1
+#
+##logging.level.org.springframework=INFO
+##logging.level.com.spring.proje=DEBUG
+#
+#
+## netsh http add urlacl url=https://+:443/ user=everyone
+## keytool -genkeypair -alias tomcat -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650
+
 spring.datasource.url=jdbc:mysql://localhost:3306/atm?useSSL=false&allowPublicKeyRetrieval=true
 spring.datasource.username=root
 spring.datasource.password=root
@@ -98,7 +127,6 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
 security.aes-key=3f7vX9aT1zPqLkN2sYdBcRgUeWhZjXo1
-
 ```
 
 ### 4. Projeyi Maven ile Derleyin:
