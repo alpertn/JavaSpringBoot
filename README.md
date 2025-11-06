@@ -328,6 +328,7 @@ public String decrypt(String sifre){
         }
 
     }
+```
 
 ### SQL Enjeksiyon Koruması
 
