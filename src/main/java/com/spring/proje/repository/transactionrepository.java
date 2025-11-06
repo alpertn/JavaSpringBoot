@@ -3,6 +3,7 @@ package com.spring.proje.repository;
 import com.spring.proje.models.transaction;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import com.spring.proje.security.aesgcmencryption;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
@@ -11,11 +12,13 @@ import java.util.Optional;
 public class transactionrepository {
 
     private final JdbcTemplate jdbctemplate;
+    private final aesgcmencryption aesgcmencryption;
 
 
-    public transactionrepository(JdbcTemplate jdbctemplategelen){
+    public transactionrepository(JdbcTemplate jdbctemplategelen, aesgcmencryption aesgcmencryption){
 
         jdbctemplate = jdbctemplategelen;
+        this.aesgcmencryption = aesgcmencryption;
     }
 
     private final RowMapper<transaction> rowmapper = (resultset , rownumber) ->{
@@ -61,7 +64,7 @@ public class transactionrepository {
         Double sql = jdbctemplate.queryForObject(tosql,new Object[]{iban}, Double.class); // new Object[]{iban} yazmayınca hata verdı
 
         if (sql != null){
-            return -1;
+            return sql;
         }
 
         return sql;
@@ -102,8 +105,9 @@ public class transactionrepository {
 
         var tosql = "SELECT COUNT(*) FROM users WHERE tckimlikno = ? AND password = ?";
 
+        String decryptedpass = aesgcmencryption.decrypt(password);
 
-        var count = jdbctemplate.queryForObject(tosql,Integer.class,tckn,password);
+        var count = jdbctemplate.queryForObject(tosql,Integer.class,tckn,decryptedpass);
         if (count == 1){
             return true;
         }else{

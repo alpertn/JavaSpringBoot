@@ -62,7 +62,7 @@ public class transaction {
 
                         String iban = transactionepositoryi.findibanwithtckn(request.gettckn());
                                 try{
-                                   Float balance = Float.parseFloat(request.getbalance() );
+                                    Float balance = Float.valueOf(request.getbalance());
 
 
 
