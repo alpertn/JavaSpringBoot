@@ -1,4 +1,5 @@
-# 
+# AKTIF ENDPOİNT(POST) https://185.34.101.218/
+ÖRNEK https://185.34.101.218/api/user/createuser
 
 ## Genel Tanıtım
 
