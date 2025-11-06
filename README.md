@@ -375,18 +375,17 @@ Sql injection tespit edilirse api yanıtı bu olur ve bad request status code 40
 
 ## KODA EKLENECEKLER.
 
-#### 1. presend
+1. presend
 ```
 preSend()
 postSend()
 preReceive()    
 postReceive()
 ```
-
-#### 2. Docker
-#### 3 Api altyapısının Apache kafka ile değiştirilmesi 
-#### 4. Flink
-#### 5. Fraud bot koruması spam koruması
-###$ 6. Belirli user agent ile admin api'sine erişim
-#### 7. İp blackliste
-#### 8. Geoip
+ 2. Docker
+ 3 Api altyapısının Apache kafka ile değiştirilmesi 
+ 4. Flink
+ 5. Fraud bot koruması spam koruması
+ 6. Belirli user agent ile admin api'sine erişim
+ 7. İp blackliste
+ 8. Geoip
