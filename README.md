@@ -8,7 +8,7 @@ Bu proje, AES/GCM encrypt / decrypt destekli, SQL injection korumasi olan, admin
 ---
 
 ## Temel Özellikler ve Faydalar
-
+*   **Log**: Adminlerin endpoıntlerı kullanırkenki ip hangi endpoint kullanıldıgı ve kac defa kullanıldıgı gıbı verılerı loglar.
 *   **Encrypt**: Bilgiler **256 bitlik** secret key, **128 bitlik** tag (16 byte) ve **12 byte'lik** IV ile şifrelenir. Aynı secret key ve IV kullanılarak **Decrypt** işlemi yapılır.
 *   **Database** : bilgiler mysql uzerinde depolanırr..
 *   **Kullanıcı Yönetimi:** Hesap oluşturma, görüntüleme, güncelleme ve silme gibi kapsamlı kullanıcı yönetimi işlevleri sunar. Her kullanıcıya benzersiz bir TCKN ve IBAN atanır.
@@ -27,18 +27,6 @@ Projeyi başarıyla kurmak ve çalıştırmak için aşağıdaki yazılımların
 *   **IDE (İsteğe Bağlı):** IntelliJ IDEA, Eclipse veya Visual Studio Code gibi bir entegre geliştirme ortamı (IDE) kullanmanız önerilir.
 *   **API Test Aracı (Önerilen):** Postman, Insomnia veya benzeri bir HTTP istemcisi, API uç noktalarını test etmek için faydalı olacaktır.
 
-**Maven Bağımlılıkları:**
-Proje, aşağıdaki temel bağımlılıkları kullanmaktadır:
-
-*   `spring-boot-starter-web`: RESTful API'ler oluşturmak için.
-*   `spring-boot-starter-jdbc`: JDBC ile veritabanı bağlantısı sağlamak için.
-*   `mysql-connector-java`: MySQL veritabanı sürücüsü (**Sürüm 8.0.33**).
-*   `spring-boot-starter-validation`: Veri doğrulaması (örneğin `@Valid`, `@NotBlank`) için.
-*   `spring-boot-starter-test`: Birim ve entegrasyon testleri için.
-*   `jackson-datatype-jsr310`: Java 8 Tarih ve Saat API'leri için JSON serileştirme/deserileştirme desteği.
-*   `h2`: Geliştirme ve test ortamları için hafif, in-memory veritabanı (**Sürüm 2.2.224**).
-
----
 
 ## Veritabanı Kurulumu ve Yapılandırması
 
