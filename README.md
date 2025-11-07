@@ -405,7 +405,7 @@ postReceive()
  7. İp blackliste
  8. Geoip
 
-## EKSTRA
+## AKTIF ENDPOİNTLER. (http / https yapabılırısnız application properties ile)
 ```json
     ----- http://localhost:8080/api/admin/updatebalancewithiban
 
