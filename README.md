@@ -1,5 +1,5 @@
 # KODU OKUMADAN ONCE
-## AKTIF ENDPOİNT(POST) https://185.34.101.218/
+## AKTIF ENDPOİNT IP (POST) https://185.34.101.218/
 ### Örnek
 https://185.34.101.218/api/admin/finduserwithid
 ```
