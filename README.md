@@ -2,7 +2,7 @@
 ## AKTIF ENDPOİNT(POST) https://185.34.101.218/
 ### Örnek
 https://185.34.101.218/api/admin/finduserwithid
----json
+```
 {
 
     "id" : "1",
@@ -11,6 +11,7 @@ https://185.34.101.218/api/admin/finduserwithid
 
 
 }
+```
 ---
 ## Genel Tanıtım
 
