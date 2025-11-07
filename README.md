@@ -404,3 +404,159 @@ postReceive()
  6. Belirli user agent ile admin api'sine erişim
  7. İp blackliste
  8. Geoip
+
+## EKSTRA
+```json
+    ----- http://localhost:8080/api/admin/updatebalancewithiban
+
+{
+
+    "iban" : "TR064556002433370544604425",
+    "balance" : "1000000",
+    "adminname" : "root",
+    "adminpassword" : "root"
+
+
+}
+
+----- http://localhost:8080/api/user/createuser
+
+{
+    "name": "alper",
+    "surname": "karakus",
+    "tckn": "51582934422",
+    "password" : "alperkarakus07"
+    "birthdate": "2007-05-25"
+
+}
+
+----- http://localhost:8080/api/admin/findidwithiban
+
+{
+
+    "iban" : "TR064556002433370544604425",
+    "adminname" : "root",
+    "adminpassword" : "root"
+
+
+}
+
+--- DONDURDUGU VERI
+
+{
+    "id": "1"
+}
+
+
+------ http://localhost:8080/api/admin/updatebalancewithid
+
+
+{
+
+    "id" : "3",
+    "balance" : "12000000",
+    "adminname" : "root",
+    "adminpassword" : "root"
+
+
+}
+
+-- DONDURDUGU VERI
+{
+    "status": "1"
+}
+
+----- http://localhost:8080/api/admin/finduserwithid
+
+
+{
+
+    "id" : "1",
+    "adminname" : "root",
+    "adminpassword" : "root"
+
+
+}
+
+
+-- gelen veri
+
+{
+    "iban": "TR064556002433370544604425",
+    "tckn": "51182934422",
+    "balance": 1.2E7,
+    "name": "alper",
+    "birthdate": "2007-05-25",
+    "password": "alperkarakus07",
+    "surname": "karakus"
+}
+
+
+
+------http://localhost:8080/api/admin/deleteuserwithid
+
+
+{
+
+    "id" : "311",
+    "adminname" : "root",
+    "adminpassword" : "root"
+
+
+}
+
+GONDERDIGI VERI
+
+{
+    "status": "0"
+}
+veya
+
+{
+    "status": "1"
+}
+
+
+------ http://localhost:8080/api/admin/finduserwithiban
+
+
+gonderilen
+
+{
+
+    "iban" : "TR197161791918570541333863",
+    "adminname" : "root",
+    "adminpassword" : "root"
+
+
+}
+
+
+gelen
+
+{
+    "iban": "TR197161791918570541333863",
+    "balance": 48.0,
+    "tckn": "51325934422",
+    "password": "alperkarakus07",
+    "name": "alper",
+    "birthdate": "2007-05-25",
+    "surname": "karakus"
+}
+
+
+-----http://localhost:8080/api/user/depositmoney
+
+{
+
+    "tckn" : "51182934422",
+    "password" : "alperkarakus07",
+    "balance" : "1000"
+
+
+}
+
+{
+    "status": "1"
+}
+```
