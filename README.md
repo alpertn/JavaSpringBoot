@@ -16,9 +16,12 @@ Bu proje, AES/GCM encrypt / decrypt destekli, SQL injection korumasi olan, admin
 *   **İşlevsellik:** Kullanıcılar, TCKN ve şifreleri ile güvenli bir şekilde oturum açarak para yatırma ve bakiye sorgulama gibi temel işlemleri gerçekleştirebilir.
 *   **SQL Enjeksiyon Koruması:** Proje sql injection denemelerını tespit eder ve durdurure
 ---
-
+## Kodun Kullanım alanları
+*   **Banka Uygulamaları**
+*   **Dijital Cüzdan Uygulamalarır**
+*   **Bakiye yüklenebilen / harcanabılen tum programlar**
+---
 ## Ön Koşullar ve Bağımlılıklar
-
 Projeyi başarıyla kurmak ve çalıştırmak için aşağıdaki yazılımların sisteminizde yüklü olması gerekmektedir:
 
 *   **JDK 17**
