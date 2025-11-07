@@ -405,7 +405,7 @@ postReceive()
  7. İp blackliste
  8. Geoip
 
-## AKTIF ENDPOİNTLER. (http / https yapabılırısnız application properties ile)
+## AKTIF ENDPOİNTLER. (application propertiesde not ekledigim ayarı eklerseniz http degil https olarak tum ınternete acılır. kendi ip'niz ile endpointi acmıs olursunuz)
 ```json
     ----- http://localhost:8080/api/admin/updatebalancewithiban
 
