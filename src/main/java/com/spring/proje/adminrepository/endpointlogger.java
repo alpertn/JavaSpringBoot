@@ -25,15 +25,14 @@ public class endpointlogger {
         String ip = getip.ip(httpServletRequest);
 
         String sql= """
-        INSERT INTO admins
-        (adminname,adminpassword,ip_address, lastendpoint, endpointusage)
-        VALUES (?,? ,?, ?, 1)
-        ON DUPLICATE KEY UPDATE
-        endpointusage = endpointusage + 1,
-        lastendpoint = IF(lastendpoint <> VALUES(lastendpoint),
-        VALUES(lastendpoint), lastendpoint);
-
-        """;
+    INSERT INTO admins
+    (adminname, adminpassword, ip_address, lastendpoint, endpointusage)
+    VALUES (?, ?, ?, ?, 1)
+    ON DUPLICATE KEY UPDATE
+    ip_address = VALUES(ip_address),
+    endpointusage = endpointusage + 1,
+    lastendpoint = IF(lastendpoint <> VALUES(lastendpoint), VALUES(lastendpoint), lastendpoint);
+    """;
 
         // sql kodu ip adresi ve endpoint fakrkliysa guncelliyor farkl idegilse ayni birakiyor hata vermemesi icin onemli
 
