@@ -1,6 +1,17 @@
-# AKTIF ENDPOİNT(POST) https://185.34.101.218/
-ÖRNEK https://185.34.101.218/api/user/createuser
+# KODU OKUMADAN ONCE
+## AKTIF ENDPOİNT(POST) https://185.34.101.218/
+### Örnek
+https://185.34.101.218/api/admin/finduserwithid
+---json
+{
 
+    "id" : "1",
+    "adminname" : "root",
+    "adminpassword" : "root"
+
+
+}
+---
 ## Genel Tanıtım
 
 Bu proje, AES/GCM encrypt / decrypt destekli, SQL injection korumasi olan, adminlerin endpoint kullandiklari ip bilgileri en son kullandiklari endpointi ve endpoint count'u loglayan, Admin Endpointlerini ve user endpointlerini kullanmak için doğrulama gereken, Kullanıcıların arasında para transverı yapabileceği bir JDK 17 Java Spring Boot Projesidir.
