@@ -1,21 +1,11 @@
-# KODU OKUMADAN ONCE
 ## AKTIF ENDPOİNT IP (POST) https://185.34.101.218/
 ### Örnek
 https://185.34.101.218/api/admin/finduserwithid
 ```
-{
-
-    "id" : "1",
-    "adminname" : "root",
-    "adminpassword" : "root"
-
-
-}
-```
 ---
 ## Genel Tanıtım
 
-Bu proje, AES/GCM encrypt / decrypt destekli, SQL injection korumasi olan, adminlerin endpoint kullandiklari ip bilgileri en son kullandiklari endpointi ve endpoint count'u loglayan, Admin Endpointlerini ve user endpointlerini kullanmak için doğrulama gereken, Kullanıcıların arasında para transverı yapabileceği bir JDK 17 Java Spring Boot Projesidir.
+Bu proje, AES/GCM encrypt / decrypt destekli, SQL injection korumasi olan, adminlerin endpoint kullandiklari ip bilgileri en son kullandiklari endpointi ve endpoint count'u loglayan, Admin Endpointlerini ve user endpointlerini kullanmak için doğrulama gereken, Kullanıcıların arasında para transverı yapabileceği bir JDK 17 Java Spring Boot Projesidir. 
 
 ---
 
@@ -27,6 +17,7 @@ Bu proje, AES/GCM encrypt / decrypt destekli, SQL injection korumasi olan, admin
 *   **Yönetici Yetkileri:** Yöneticiler, kullanıcı bakiyelerini güncelleme, kullanıcı bilgilerini sorgulama ve kullanıcı hesaplarını silme gibi tam kontrol sağlayan özel yetkilere sahiptir. Yönetici erişimi, veritabanı tabanlı kimlik doğrulama ile güvence altına alınmıştır.
 *   **İşlevsellik:** Kullanıcılar, TCKN ve şifreleri ile güvenli bir şekilde oturum açarak para yatırma ve bakiye sorgulama gibi temel işlemleri gerçekleştirebilir.
 *   **SQL Enjeksiyon Koruması:** Proje sql injection denemelerını tespit eder ve durdurure
+*   **NVİ APİ**: KVKK ve panel olayları yuzunden 2025 30 eylul itibaren nufus mudurlugu nvi apiyi public bir api olmaktan çıkardı. nvi api almak icin https://kpsbasvuru.nvi.gov.tr/Acik/Anasayfa linkine gitmemiz gerekiyor ama bireysel kullanıma izin verilmiyor. şirketler ise sorgu başına 0.25TL para oduyor. oyuzden nvi api ekleyemedim koda.
 ---
 ## Kodun Kullanım alanları
 *   **Banka Uygulamaları**
