@@ -17,7 +17,7 @@ Bu proje, AES/GCM encrypt / decrypt destekli, SQL injection korumasi olan, admin
 *   **Yönetici Yetkileri:** Yöneticiler, kullanıcı bakiyelerini güncelleme, kullanıcı bilgilerini sorgulama ve kullanıcı hesaplarını silme gibi tam kontrol sağlayan özel yetkilere sahiptir. Yönetici erişimi, veritabanı tabanlı kimlik doğrulama ile güvence altına alınmıştır.
 *   **İşlevsellik:** Kullanıcılar, TCKN ve şifreleri ile güvenli bir şekilde oturum açarak para yatırma ve bakiye sorgulama gibi temel işlemleri gerçekleştirebilir.
 *   **SQL Enjeksiyon Koruması:** Proje sql injection denemelerını tespit eder ve durdurure
-*   **NVİ APİ**: KVKK ve panel olayları yuzunden 2025 30 eylul itibaren nufus mudurlugu nvi apiyi public bir api olmaktan çıkardı. nvi api almak icin https://kpsbasvuru.nvi.gov.tr/Acik/Anasayfa linkine gitmemiz gerekiyor ama bireysel kullanıma izin verilmiyor. şirketler ise sorgu başına 0.25TL para oduyor. oyuzden nvi api ekleyemedim koda.
+*   **NVİ APİ**: KVKK ve panel olayları yuzunden 2025 30 eylul itibaren nufus mudurlugu nvi apiyi public bir api olmaktan çıkardı. nvi api almak icin https://kpsbasvuru.nvi.gov.tr/Acik/Anasayfa linkine gitmemiz gerekiyor ama bireysel kullanıma izin verilmiyor. sadece başvuru ile api key alınabiliyor ve sorgular da ucretsız değil. oyuzden koda apiyi ekleyemedim.
 ---
 ## Kodun Kullanım alanları
 *   **Banka Uygulamaları**
