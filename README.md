@@ -1,6 +1,4 @@
-## AKTIF ENDPOİNT IP (POST) https://185.34.101.218/
-### Örnek
-https://185.34.101.218/api/admin/finduserwithid
+## AKTIF ENDPOİNT DOMAIN (POST) http://monteq.xyz/api/user/createuser
 
 ---
 ## Genel Tanıtım
