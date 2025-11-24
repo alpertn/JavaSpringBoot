@@ -1,4 +1,4 @@
-## AKTIF ENDPOİNT DOMAIN (POST) https://monteq.xyz/api/user/createuser
+## SERVERI UBUNTUYA TAŞIYACAGIM ICIN BIR SURE KAPALIDIR ENDPOİNT DOMAIN (POST) https://monteq.xyz/api/user/createuser
 
 ---
 ## Genel Tanıtım
